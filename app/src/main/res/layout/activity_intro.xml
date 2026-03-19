@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".IntroActivity">
+
+    <!-- Step 1: Permission Grant -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_step1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="headline1, body1, btn_grant_access, btn_manual_entry" />
+
+    <TextView
+        android:id="@+id/headline1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Automate your Expense Tracking"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        app:layout_constraintBottom_toTopOf="@+id/body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/body1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="To automatically track your spending, Finance Tracker needs access to your SMS messages. We use this strictly to parse bank transaction alerts locally on your device. Your personal SMS data never leaves your phone."
+        android:textAppearance="?attr/textAppearanceBody1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_grant_access"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headline1" />
+
+    <Button
+        android:id="@+id/btn_grant_access"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Grant Access"
+        app:layout_constraintBottom_toTopOf="@+id/btn_manual_entry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body1" />
+
+    <Button
+        android:id="@+id/btn_manual_entry"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="No thanks, I'll enter manually"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_grant_access" />
+
+    <!-- Step 2: Sync Options -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_step2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="headline2, radio_group_sync, btn_start_sync" />
+
+    <TextView
+        android:id="@+id/headline2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Setup Sync"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_sync"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/headline2">
+
+        <RadioButton
+            android:id="@+id/radio_30_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Import last 30 days" />
+
+        <RadioButton
+            android:id="@+id/radio_90_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Import last 90 days" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_start_sync"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Start Sync"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group_sync" />
+
+    <!-- Loading View -->
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="progress_indicator, loading_text" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toTopOf="@+id/loading_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Scanning your inbox..."
+        android:textAppearance="?attr/textAppearanceBody1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_indicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

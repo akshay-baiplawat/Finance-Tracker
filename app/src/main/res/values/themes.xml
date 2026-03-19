@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The parent theme must be Material3 to use Material3 components and attributes -->
+    <style name="Theme.FinanceTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+        <!-- Status Bar Configuration -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/purple_500</item>
+    </style>
+</resources>
