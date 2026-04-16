@@ -17,6 +17,28 @@ A modern Android personal finance management app built with Kotlin and Jetpack C
 - **Trip Mode** - Auto-categorize expenses during trips
 - **Display Scaling** - Adjustable UI size (XS/S/M/L)
 
+## Download
+
+Get the latest version of Finance Tracker:
+
+<div align="center">
+
+### 📥 [Download APK](https://github.com/akshay-baiplawat/FinanceTracker/releases/latest/download/app-release.apk)
+
+**Latest Version:** 1.0.0 | **Size:** ~10 MB | **Min Android:** 8.0 (API 26)
+
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/akshay-baiplawat/FinanceTracker/releases/latest/download/app-release.apk)
+
+</div>
+
+**Installation Instructions:**
+1. Download the APK file from the link above
+2. Enable "Install from Unknown Sources" in your device settings
+3. Open the downloaded APK file and follow the installation prompts
+4. Grant necessary permissions (SMS, Notifications) for full functionality
+
+> **Note:** This app is not available on Google Play Store. You need to install it manually using the APK file.
+
 ## Tech Stack
 
 | Technology | Purpose |
