@@ -23,20 +23,19 @@ Get the latest version of Finance Tracker:
 
 <div align="center">
 
-### 📥 [Download APK](https://github.com/akshay-baiplawat/Finance-Tracker/releases)
+### 📥 [Download APK](https://github.com/akshay-baiplawat/Finance-Tracker/releases/download/apk/Finance_Tracker.apk)
 
 **Min Android Version:** 8.0 (API 26) | **Size:** ~4 MB
 
-[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/akshay-baiplawat/Finance-Tracker/releases)
+[![Download APK](https://img.shields.io/badge/Download-APK-brightgreen?style=for-the-badge&logo=android)](https://github.com/akshay-baiplawat/Finance-Tracker/releases/download/apk/Finance_Tracker.apk)
 
 </div>
 
 **Installation Instructions:**
-1. Go to the [Releases page](https://github.com/akshay-baiplawat/Finance-Tracker/releases)
-2. Download the latest `app-release.apk` file
-3. Enable "Install from Unknown Sources" in your device settings (Settings → Security → Unknown Sources)
-4. Open the downloaded APK file and tap "Install"
-5. Grant necessary permissions (SMS, Notifications) for full functionality
+1. Click the download button above to get `Finance_Tracker.apk`
+2. Enable "Install from Unknown Sources" in your device settings (Settings → Security → Unknown Sources)
+3. Open the downloaded APK file and tap "Install"
+4. Grant necessary permissions (SMS, Notifications) for full functionality
 
 > **Note:** This app is not available on Google Play Store. You need to install it manually using the APK file.
 
